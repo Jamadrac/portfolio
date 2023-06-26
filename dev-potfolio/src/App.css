@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .card {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  /* Add additional styling as per your requirements */
+  
