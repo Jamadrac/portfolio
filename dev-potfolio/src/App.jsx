@@ -1,22 +1,28 @@
-import './App.css'
-import Intro from './components/Intro'
-import Cards from './components/Cards'
-import Timeline from './components/Timeline'
-import Footer from './components/Footer'
-import Contact from './components/Contact'
-function App() {
-    return ( 
-      <div className='App'>
-        <div className='max-w-5x1 w-11/12'>
-        <Intro />
-        <Cards/>
-        <Timeline/>
-        <Contact/>
-        <Footer/>
-        </div>
-      </div>
+import React from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Project from "./components/Project";
+import Hireme from "./components/Hireme";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Bot from "./components/Bot";
 
-  )
-}
+const App = () => {
+  return (
+    <div>
+      <Navbar />
+      <Bot />
+      <Hero />
+      <About />
+      <Skills />
+      <Hireme />
+      <Project />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
