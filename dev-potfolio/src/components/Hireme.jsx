@@ -1,52 +1,35 @@
 import React from "react";
-
-const Contact = () => {
-  const contact_info = [
-    { logo: "mail", text: "rabbikindalo001@gmail.com" },
-    { logo: "logo-whatsapp", text: "+260975627608" },
-    {
-      logo: "location",
-      text: "lusaka & remote ",
-    },
-  ];
+import hireMe from "../assets/images/hireMe.png";
+const Hireme = () => {
   return (
-    <section id="contact" className="py-10 px-3 text-white">
-      <div className="text-center mt-8">
+    <section id="hireme" className="py-10 px-3 text-white">
+      <div className="text-center">
         <h3 className="text-4xl font-semibold">
-          Contact <span className="text-cyan-600">Me</span>
+          Hire <span className="text-cyan-600">Me</span>
         </h3>
-        <p className="text-gray-400 mt-3 text-lg">Get in touch</p>
-
-        <div 
-          className="mt-16 flex md:flex-row flex-col
-         gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto"
-        >
-          <form className="flex flex-col flex-1 gap-5">
-            <input type="text" placeholder="Your Name" />
-            <input type="Email" placeholder="Your Email Address" />
-            <textarea placeholder="Your Message" rows={10}></textarea>
-            <button className="btn-primary w-fit">Send Message</button>
-          </form>
-          <div className="flex flex-col  gap-7 ">
-            {contact_info.map((contact, i) => (
-              <div
-                key={i}
-                className="flex flex-row  
-                  text-left gap-4 flex-wrap items-center"
-              >
-                <div className="min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
-                  <ion-icon name={contact.logo}></ion-icon>
-                </div>
-                <p className="md:text-base text-sm  break-words">
-                  {contact.text}
-                </p>
-              </div>
-            ))}
-          </div>
+        <p className="text-gray-400 mt-3 text-lg">Do you have any work?</p>
+      </div>
+      <div className="bg-gray-700 relative px-8 rounded-2xl py-5 lg:max-w-4xl mx-auto min-h-[24rem] mt-24 flex gap-6 lg:flex-row flex-col-reverse items-center">
+        <div>
+          <h2 className="text-2xl font-semibold">
+            Do you want any work from me?
+          </h2>
+          <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta
+            soluta quos tempore eos accusamus cupiditate, amet in similique
+            sapiente obcaecati odio deleniti architecto corporis ratione.
+            Consequatur a quidem maiores!
+          </p>
+          <button className="btn-primary mt-10">Say Hello</button>
         </div>
+        <img
+          src={hireMe}
+          alt=""
+          className="lg:h-[32rem] h-80 lg:absolute bottom-0 -right-3 object-cover"
+        />
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default Hireme;
