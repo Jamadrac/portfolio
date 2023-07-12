@@ -8,7 +8,7 @@ const Skills = () => {
       level: "Advance",
       count: 99,
     },
-    // Rest of the skills
+    // Rest of the skills   ghjkl;'
   ];
 
   return (
