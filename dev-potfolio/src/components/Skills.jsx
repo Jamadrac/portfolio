@@ -1,28 +1,16 @@
 import React from "react";
+import iot from "../assets/images/iot.png";
 
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-html5",
+      logo: iot,
       level: "Advance",
-      count: 86,
+      count: 99,
     },
-    {
-      logo: "logo-css3",
-      level: "Expect",
-      count: 90,
-    },
-    {
-      logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
-    },
-    {
-      logo: "logo-react",
-      level: "Intermediate",
-      count: 80,
-    },
+    // Rest of the skills   ghjkl;'
   ];
+
   return (
     <section id="skills" className="py-10 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
@@ -43,7 +31,11 @@ const Skills = () => {
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                  {typeof skill.logo === "string" ? (
+                    <ion-icon name={skill.logo}></ion-icon>
+                  ) : (
+                    <img src={skill.logo} alt="Skill" />
+                  )}
                 </div>
               </div>
               <p className="text-xl mt-3">{skill.level}</p>
