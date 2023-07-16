@@ -14,13 +14,13 @@ const Project = () => {
   const projects = [
     {
       img: project1,
-      name: "Movie App",
+      name: "restrurant app",
       github_link: "https://github.com/Sridhar-C-25",
       live_link: "https://myreactflix.netlify.app",
     },
     {
       img: project2,
-      name: "Job search Web App",
+      name: "mutivender E-commerce app",
       github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
       live_link: "https://myjobsearch.netlify.app",
     },
@@ -32,14 +32,26 @@ const Project = () => {
     },
     {
       img: project4,
-      name: "React Nav",
+      name: "mobile money intergration",
       github_link:
         "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
       live_link: "https://reacttailwindnavbar.netlify.app",
     },
     {
       img: project5,
-      name: "Vue Country",
+      name: "gps tracking systen",
+      github_link: "https://github.com/Sridhar-C-25",
+      live_link: "https://vuecountry05.netlify.app",
+    },
+    {
+      img: project5,
+      name: "gps mobile app",
+      github_link: "https://github.com/Sridhar-C-25",
+      live_link: "https://vuecountry05.netlify.app",
+    },
+    {
+      img: project5,
+      name: "automated mini farm",
       github_link: "https://github.com/Sridhar-C-25",
       live_link: "https://vuecountry05.netlify.app",
     },
