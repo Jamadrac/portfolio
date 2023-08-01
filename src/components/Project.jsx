@@ -5,7 +5,7 @@ import project2 from "../assets/images/project-2.jpg";
 import project3 from "../assets/images/project-3.jpg";
 import project4 from "../assets/images/project-4.jpg";
 import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person1.png";
+import project_person from "../assets/images/project_person1.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";

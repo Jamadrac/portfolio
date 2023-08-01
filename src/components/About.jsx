@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../assets/images/about.png"
+import aboutimg from "../assets/images/iot.png"
 
 const About = () => {
   const info=[
@@ -18,7 +18,7 @@ const About = () => {
         <div>
           <div className="text-gray-400 my-3">
             <p className="text-left">
-            Hello, I'm Rabbi, a versatile full-stack developer specializing in creating immersive web applications. With expertise in both front-end and back-end development, I bring ideas to life and deliver seamless user experiences. I excel at building responsive user interfaces using modern frameworks like React, Angular, and Vue.js. On the back-end, I'm skilled in server-side programming languages like Node.js, Python, and Ruby on Rails, as well as database integration and cloud platforms. With a results-driven mindset and a focus on collaboration, I thrive in agile development environments and deliver high-quality code that meets business objectives. I'm passionate about creating innovative solutions and constantly staying up-to-date with the latest technologies.
+            Hello, I'm Rabbi, a versatile full-stack developer specializing in creating immersive web applications. With expertise in both front-end and back-end development,  I excel at building responsive user interfaces using modern frameworks like React,  On the back-end, I'm skilled in server-side programming languages like Node.js, Python, and Ruby on Rails, as well as database integration and cloud platforms. With a results-driven mindset and a focus on collaboration, I thrive in agile development environments and deliver high-quality code that meets business objectives. I'm passionate about creating innovative solutions and constantly staying up-to-date with the latest technologies.
             </p>
             <div className="flex mt-10 items-center gap-7">
               {
@@ -29,7 +29,8 @@ const About = () => {
                   <span>{content.text}</span>
                 </div>
               ))}
-              <a href="./src/assets/code_a_program.pdf" download><button className="btn-primary mt">Download My CV</button>
+              <a href="./src/assets/updated-port-v7.pdf" download>
+                <button className="btn-primary">Download CV</button>
               </a>
               
             </div>
