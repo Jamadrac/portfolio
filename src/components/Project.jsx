@@ -51,9 +51,9 @@ const Project = () => {
     },
     {
       img: project5,
-      name: "automated mini farm",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://vuecountry05.netlify.app",
+      name: "maps tracking service -react js",
+      github_link: "#",
+      live_link: "https://vercel.com/jamadrac/frontend",
     },
   ];
   return (
