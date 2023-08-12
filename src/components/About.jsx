@@ -17,8 +17,15 @@ const About = () => {
        md:gap-6 gap-12 px-12 max-w=-6x1 mx auto">
         <div>
           <div className="text-gray-400 my-3">
-            <p className="text-left">
-            Hello, I'm Rabbi, a versatile full-stack developer specializing in creating immersive web applications. With expertise in both front-end and back-end development,  I excel at building responsive user interfaces using modern frameworks like React,  On the back-end, I'm skilled in server-side programming languages like Node.js, Python, and Ruby on Rails, as well as database integration and cloud platforms. With a results-driven mindset and a focus on collaboration, I thrive in agile development environments and deliver high-quality code that meets business objectives. I'm passionate about creating innovative solutions and constantly staying up-to-date with the latest technologies.
+            <p className=" flex-items text-left sm:px-4"> 
+            Hello, I'm Rabbi, a versatile full-stack developer specializing in creating immersive web applications.
+             With expertise in both front-end and back-end development, 
+            I excel at building responsive user interfaces using modern frameworks like React,  On the back-end,
+            I'm skilled in server-side programming languages like Node.js, Python, and Ruby on Rails,
+            as well as database integration and cloud platforms.
+             With a results-driven mindset and a focus on collaboration,
+             I thrive in agile development environments and deliver high-quality code that meets business objectives.
+             I'm passionate about creating innovative solutions and constantly staying up-to-date with the latest technologies.
             </p>
             <div className="flex mt-10 items-center gap-7">
               {
