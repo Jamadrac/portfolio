@@ -24,12 +24,12 @@ const Project = () => {
       github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
       live_link: "https://myjobsearch.netlify.app",
     },
-    {
-      img: project3,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
-    },
+    // {
+    //   img: project3,
+    //   name: "Highking",
+    //   github_link: "https://github.com/Sridhar-C-25/highking",
+    //   live_link: "https://highking01.netlify.app",
+    // },
     {
       img: project4,
       name: "Api securit auth-encryption",
