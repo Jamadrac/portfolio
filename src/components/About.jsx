@@ -21,12 +21,12 @@ const About = () => {
             Hello, I'm Rabbi, a versatile full-stack developer specializing in creating immersive web applications.
              With expertise in both front-end and back-end development, 
             I excel at building responsive user interfaces using modern frameworks like React,  On the back-end,
-            I'm skilled in server-side programming languages like Node.js, Python, and Ruby on Rails,
+            I'm skilled in server-side programming languages like Node.js, Python, 
             as well as database integration and cloud platforms.
              With a results-driven mindset and a focus on collaboration,
              I thrive in agile development environments and deliver high-quality code that meets business objectives.
-             I'm passionate about creating innovative solutions and constantly staying up-to-date with the latest technologies.
-            </p>
+             I'm passionate about creating innovative solutions.
+            </p>a
             <div className="flex mt-10 items-center gap-7">
               {
                 info.map(content=>(
@@ -36,7 +36,8 @@ const About = () => {
                   <span>{content.text}</span>
                 </div>
               ))}
-              <a href="./src/assets/updated-port-v7.pdf" download>
+              
+              <a href="./src/assets/CV.pdf" download>
                 <button className="btn-primary">Download CV</button>
               </a>
               
