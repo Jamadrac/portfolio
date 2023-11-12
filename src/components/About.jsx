@@ -39,7 +39,7 @@ const About = () => {
               ))}
               
               <a href="${cv}" download>
-                <button className="btn-primary">Download CV</button>
+                <button className="btn-primary">@Download CV</button>
               </a>
               
             </div>
