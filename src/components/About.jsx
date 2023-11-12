@@ -1,6 +1,6 @@
 import React from "react";
 import aboutimg from "../assets/images/iot.png"
-import cv from "../../dist/assets/CV.699c83e8.pdf"
+// import cv from "../../dist/assets/CV.699c83e8.pdf"
 
 const About = () => {
   const info=[
