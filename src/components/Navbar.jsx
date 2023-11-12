@@ -27,8 +27,8 @@ const Navbar = () => {
     setOpen(!open);
   };
 
-  return (
-    <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "bg-white/60 text-gray-900" : "text-white"}`}>
+  return (<div className="box-border bg-gray-800 text-gray-100">
+        <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "bg-white/60 text-gray-900" : "text-white"}`}>
       <div className="flex items-center justify-between">
         <div className="mx-7">
           <h4 className="text-4xl uppercase font-bold">
@@ -62,7 +62,8 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </nav>
+    </nav></div>
+
   );
 };
 

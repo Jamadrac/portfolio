@@ -8,11 +8,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Bot from "./components/Bot";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const home = () => {
+
+const Home = () => {
   return (
-    <div>
+    <div className="box-border bg-gray-800 text-gray-100">
     
       <Navbar />
       <Bot />
@@ -28,4 +28,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
