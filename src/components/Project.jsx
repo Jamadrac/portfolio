@@ -20,24 +20,24 @@ import { Pagination, Autoplay } from "swiper";
       github_link: "https://github.com/Jamadrac/jamadracpdf",
       live_link: "https://github.com/Jamadrac/apks/raw/main/app-release.apk",
     },
-    {
-      img: project2,
-      name: "mutivender E-commerce app",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
-    },
+    // {
+    //   img: project2,
+    //   name: "mutivender E-commerce app",
+    //   github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
+    //   live_link: "https://myjobsearch.netlify.app",
+    // },
    
     
   ];
 
 const Project = () => {
   const projects_websites = [
-    {
-      img: project1,
-      name: "restrurant app",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
-    },
+    // {
+    //   img: project1,
+    //   name: "restrurant app",
+    //   github_link: "https://github.com/Sridhar-C-25",
+    //   live_link: "https://myreactflix.netlify.app",
+    // },
     {
       img: project2,
       name: "mutivender E-commerce app",
@@ -47,7 +47,7 @@ const Project = () => {
     {
       img: project3,
       name: "landing page",
-      github_link: "https://github.com/Srsds",
+      github_link: "#",
       live_link: "https://www.tokpayapp.xyz/",
     },
     {
@@ -66,7 +66,7 @@ const Project = () => {
     {
       img: project5,
       name: "gps mobile app",
-      github_link: "https://github.com/Sridhar-C-25",
+      github_link: "#",
       live_link: "https://webamrck.vercel.app/",
     },
     {
@@ -143,7 +143,7 @@ const Project = () => {
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">
-          My <span className="text-cyan-600">Projects</span>
+          My <span className="text-cyan-600">Mobile Projects</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
       </div>
