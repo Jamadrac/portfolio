@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/images/project-1.png";
-import project2 from "../assets/images/project-2.jpg";
+import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
 import project5 from "../assets/images/project-5.png";
@@ -40,9 +40,9 @@ const Project = () => {
     // },
     {
       img: project2,
-      name: "mutivender E-commerce app",
+      name: " E-commerce shop + android app",
       github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      live_link: "https://withinzed.vercel.app/",
     },
     {
       img: project3,
