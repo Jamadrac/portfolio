@@ -23,7 +23,7 @@ import { Pagination, Autoplay } from "swiper";
     // {
     //   img: project2,
     //   name: "mutivender E-commerce app",
-    //   github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
+    //   github_link: "https://github.com/Jamadrac-C-25/jobsearchapp",
     //   live_link: "https://myjobsearch.netlify.app",
     // },
    
@@ -35,13 +35,13 @@ const Project = () => {
     // {
     //   img: project1,
     //   name: "restrurant app",
-    //   github_link: "https://github.com/Sridhar-C-25",
+    //   github_link: "https://github.com/Jamadrac-C-25",
     //   live_link: "https://myreactflix.netlify.app",
     // },
     {
       img: project2,
       name: " E-commerce shop + android app",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
+      github_link: "xxxxxxxxxxxx",
       live_link: "https://withinzed.vercel.app/",
     },
     {
@@ -60,7 +60,7 @@ const Project = () => {
     {
       img: project5,
       name: "gps tracking systen",
-      github_link: "https://github.com/Sridhar-C-25",
+      github_link: "https://github.com/Jamadrac-C-25",
       live_link: "https://webamrck.vercel.app/",
     },
     {
