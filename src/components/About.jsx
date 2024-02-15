@@ -23,7 +23,7 @@ const About = () => {
               <p className="flex-items text-left sm:px-4">
                 Hello, I'm Rabbi, a versatile full-stack developer specializing in creating immersive web applications.
                 With expertise in both front-end and back-end development,
-                I excel at building responsive user interfaces using modern frameworks like React, On the back-end,
+                I excel at building responsive user interfaces using modern frameworks like React, and flutter On the back-end,
                 I'm skilled in server-side programming languages like Node.js, Python,
                 as well as database integration and cloud platforms.
                 With a results-driven mindset and a focus on collaboration,
@@ -39,9 +39,9 @@ const About = () => {
                     <span>{content.text}</span>
                   </div>
                 ))}
-                <Link to={cv} target="_blank" download>
+                <a href="https://docs.google.com/document/d/1sofvt47lmgjJVbGY-dGoqEC3fcm_usQsmwBe6pysA0o/edit?usp=sharing" >
                   <button className="btn-primary">Download CV</button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

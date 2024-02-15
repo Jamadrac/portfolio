@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/images/project-1.png";
+import project1 from "../assets/images/recepts.png";
 import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
@@ -32,12 +32,12 @@ import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
   const projects_websites = [
-    // {
-    //   img: project1,
-    //   name: "restrurant app",
-    //   github_link: "https://github.com/Jamadrac-C-25",
-    //   live_link: "https://myreactflix.netlify.app",
-    // },
+    {
+      img: project1,
+      name: "online recepts storeg (django)",
+      github_link: "https://github.com/Jamadrac-C-25",
+      live_link: "https://printeck.onrender.com",
+    },
     {
       img: project2,
       name: " E-commerce shop + android app",
