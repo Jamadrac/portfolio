@@ -1,12 +1,18 @@
 import React from "react";
 import her from "../assets/images/hre.png";
+
 const Hero = () => {
-  const social_media = [
-    "logo-instagram",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
-  ];
+  const socialMediaLinks = {
+    // "logo-instagram": "https://www.instagram.com/your_username",
+    "logo-facebook": "https://web.facebook.com/jamadrac/",
+    "logo-linkedin": "https://zm.linkedin.com/in/rabbi-kindalo-209b0026a",
+    // "logo-twitter": "https://twitter.com/your_username",
+  };
+
+  const handleSocialMediaClick = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section
       id="home"
@@ -29,10 +35,11 @@ const Hero = () => {
           </h4>
           <button className="btn-primary mt-8">Connect with Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
+            {Object.entries(socialMediaLinks).map(([icon, url]) => (
               <div
                 key={icon}
-                className="text-gray-600 hover:text-white cursor-pointer "
+                className="text-gray-600 hover:text-white cursor-pointer"
+                onClick={() => handleSocialMediaClick(url)}
               >
                 <ion-icon name={icon}></ion-icon>
               </div>
