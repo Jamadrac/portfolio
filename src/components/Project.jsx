@@ -37,8 +37,8 @@ const Project = () => {
     {
       img: project3,
       name: "landing page",
-      github_link: "#",
-      live_link: "",
+      github_link: "https://tockpay.vercel.app/sxdf",
+      live_link: "https://tockpay.vercel.app/",
     },
     {
       img: project4,
