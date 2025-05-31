@@ -4,7 +4,8 @@ import project1 from "../assets/images/recepts.png";
 import project2 from "../assets/images/zam-bus.png";
 import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
-import project5 from "../assets/images/project-5.png";
+import iot from "../assets/images/iot.png";
+import hre from "../assets/images/hre.png";
 import project_person from "../assets/images/project_person1.jpg";
 import mobileapp from "../assets/images/mobileapp.jpg";
 import "swiper/css";
@@ -47,19 +48,19 @@ const Project = () => {
       live_link: "https://meps-nodejs-api.vercel.app/",
     },
     {
-      img: project5,
+      img: iot,
       name: "gps tracking systen",
-      github_link: "https://github.com/Jamadrac-C-25",
+      github_link: "https://github.com/Jamadrac",
       live_link: "https://webmarck.vercel.app/",
     },
     {
-      img: project5,
+      img: mobileapp,
       name: "gps mobile app",
       github_link: "#",
       live_link: "https://webmarck.vercel.app/",
     },
     {
-      img: project5,
+      img: hre,
       name: "fundraising platform",
       github_link: "https://startup-fund-ten.vercel.app/",
       live_link: "https://startup-fund-ten.vercel.app/",
@@ -98,7 +99,11 @@ const Project = () => {
               {projects_websites.map((project_info, i) => (
                 <SwiperSlide key={i}>
                   <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
-                    <img src={project_info.img} alt="" className="rounded-lg" />
+                    <img 
+                      src={project_info.img} 
+                      alt="" 
+                      className="rounded-lg w-full h-[200px] object-cover"
+                    />
                     <h3 className="text-xl my-4">{project_info.name}</h3>
                     <div className="flex gap-3">
                       <a
@@ -157,7 +162,11 @@ const Project = () => {
               {projects_mobile_apps.map((project_info, i) => (
                 <SwiperSlide key={i}>
                   <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
-                    <img src={project_info.img} alt="" className="rounded-lg" />
+                    <img 
+                      src={project_info.img} 
+                      alt="" 
+                      className="rounded-lg w-full h-[200px] object-cover"
+                    />
                     <h3 className="text-xl my-4">{project_info.name}</h3>
                     <div className="flex gap-3">
                       <a
