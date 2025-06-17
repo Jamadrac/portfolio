@@ -5,9 +5,9 @@ import cv from "../assets/CV.pdf";
 
 const About = () => {
   const info = [
-    { text: "years in experience", count: "02" },
+    { text: "years in experience", count: "04" },
     { text: "completed projects in-production", count: "04" },
-    { text: "companies worked with", count: "04" },
+    { text: "companies worked with", count: "02" },
   ];
 
   return (
