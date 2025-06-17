@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/images/recepts.png";
+import musicapp from "../assets/images/musicapp.jpg";
 import project2 from "../assets/images/zam-bus.png";
 import project3 from "../assets/images/project-3.png";
-import project4 from "../assets/images/project-4.png";
+import webmarck from "../assets/images/webmarck.png";
 import iot from "../assets/images/iot.png";
 import hre from "../assets/images/hre.png";
 import project_person from "../assets/images/project_person1.jpg";
@@ -16,7 +16,7 @@ import { Pagination, Autoplay } from "swiper";
 const ProjectSection = ({ title, projects = [] }) => {
   return (
     <section className="py-10">
-      <h3 className="text-3xl font-semibold mb-8">{title}</h3>
+      <h3 className="text-3xl font-semibold mb-8">{title} ({projects.length})</h3>
       <div className="w-full">
         <Swiper
           slidesPerView={1}
@@ -46,6 +46,9 @@ const ProjectSection = ({ title, projects = [] }) => {
                     alt={project.name} 
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
+                  <div className="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-cyan-600 rounded-full text-white font-semibold">
+                    {i + 1}
+                  </div>
                 </div>
                 <div className="p-6">
                   <h4 className="text-xl font-semibold mb-2">{project.name}</h4>
@@ -99,6 +102,15 @@ const Project = () => {
         github_link: "https://github.com/Jamadrac",
         live_link: "https://book8learning.vercel.app/",
       },
+      
+    {
+        img: webmarck,
+        name: "React Express Prisma App",
+        description: "Full-stack application with real-time features using React, Express.js, and Prisma ORM",
+        tech: ["React", "Express.js", "iot", "gps", "Prisma", "PostgreSQL", "iot"],
+        github_link: "https://github.com/Jamadrac",
+        live_link: "https://webmarck.vercel.app/",
+      },
       {
         img: iot,
         name: "Inventory Management System",
@@ -118,22 +130,28 @@ const Project = () => {
     ],
     mobileApps: [
       {
-        img: mobileapp,
-        name: "PDF Reader Mobile App",
-        description: "Feature-rich PDF reader with annotations support",
-        tech: ["Flutter", "Dart"],
+        img: musicapp,
+        name: "Music Player App",
+        description: "Feature-rich music player with playlist management",
+        tech: ["Flutter", "Dart", "Audio API"],
         github_link: "https://github.com/Jamadrac/jamadracpdf",
         live_link: "https://github.com/Jamadrac/apks/raw/main/app-release.apk",
-      }
-    ],
-    apis: [
+      },
       {
-        img: project4,
-        name: "Secure Authentication API",
-        description: "RESTful API with advanced security features",
-        tech: ["Node.js", "JWT", "Encryption"],
-        github_link: "https://github.com/Jamadrac/backend-js/tree/master",
-        live_link: "https://meps-nodejs-api.vercel.app/",
+        img: webmarck,
+        name: "GPS Tracking App",
+        description: "Real-time GPS tracking mobile application with location sharing capabilities",
+        tech: ["Flutter", "Dart", "Google Maps", "Location Services"],
+        github_link: "https://github.com/Jamadrac/webmarkapp",
+        live_link: "https://github.com/Jamadrac/webmarkapp/raw/refs/heads/main/build/app/outputs/flutter-apk/app-release.apk",
+      },
+      {
+        img: book8,
+        name: "Book8 Kids Learning App",
+        description: "Interactive mobile learning platform for children with engaging educational content",
+        tech: ["Flutter", "Dart", "Educational API"],
+        github_link: "https://github.com/Jamadrac/book8app",
+        live_link: "https://raw.githubusercontent.com/Jamadrac/book8app/refs/heads/main/build/app/outputs/flutter-apk/app-release.apk",
       }
     ]
   };
@@ -146,14 +164,13 @@ const Project = () => {
             My <span className="text-cyan-600">Projects</span>
           </h2>
           <p className="text-gray-400 text-lg">
-            Showcasing my best work across web, mobile, and API development
+            Showcasing my best work in web and mobile development
           </p>
         </div>
 
         <div className="space-y-16">
           <ProjectSection title="Web Applications" projects={projects.webApps} />
           <ProjectSection title="Mobile Applications" projects={projects.mobileApps} />
-          <ProjectSection title="APIs & Backend Services" projects={projects.apis} />
         </div>
       </div>
     </div>
