@@ -5,7 +5,7 @@ import project2 from "../assets/images/zam-bus.png";
 import project3 from "../assets/images/project-3.png";
 import webmarck from "../assets/images/webmarck.png";
 import iot from "../assets/images/iot.png";
-import hre from "../assets/images/hre.png";
+import hre from "../assets/images/hre.png";                
 import project_person from "../assets/images/project_person1.jpg";
 import mobileapp from "../assets/images/mobileapp.jpg";
 import book8 from "../assets/images/book8website.png";
@@ -100,7 +100,7 @@ const Project = () => {
         description: "A comprehensive online learning management system",
         tech: ["Next.js", "MongoDB", "Node.js"],
         github_link: "https://github.com/Jamadrac",
-        live_link: "https://book8learning.vercel.app/",
+        live_link: "https://book8.vercel.app/",
       },
       
     {
@@ -156,7 +156,7 @@ const Project = () => {
     ]
   };
 
-  return (
+  return (                                    
     <div className="py-10 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
