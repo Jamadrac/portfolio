@@ -94,14 +94,14 @@ const ProjectSection = ({ title, projects = [] }) => {
 const Project = () => {
   const projects = {
     webApps: [
-      {
-        img: book8,
-        name: "Book8 Learning Platform",
-        description: "A comprehensive online learning management system",
-        tech: ["Next.js", "MongoDB", "Node.js"],
-        github_link: "https://github.com/Jamadrac",
-        live_link: "https://book8.vercel.app/",
-      },
+      // {
+      //   img: book8,
+      //   name: "Book8 Learning Platform",
+      //   description: "A comprehensive online learning management system",
+      //   tech: ["Next.js", "MongoDB", "Node.js"],
+      //   github_link: "https://github.com/Jamadrac",
+      //   live_link: "https://book8.vercel.app/",
+      // },
       
     {
         img: webmarck,
@@ -145,14 +145,14 @@ const Project = () => {
         github_link: "https://github.com/Jamadrac/webmarkapp",
         live_link: "https://github.com/Jamadrac/webmarkapp/raw/refs/heads/main/build/app/outputs/flutter-apk/app-release.apk",
       },
-      {
-        img: book8,
-        name: "Book8 Kids Learning App",
-        description: "Interactive mobile learning platform for children with engaging educational content",
-        tech: ["Flutter", "Dart", "Educational API"],
-        github_link: "https://github.com/Jamadrac/book8app",
-        live_link: "https://raw.githubusercontent.com/Jamadrac/book8app/refs/heads/main/build/app/outputs/flutter-apk/app-release.apk",
-      }
+      // {
+      //   img: book8,
+      //   name: "Book8 Kids Learning App",
+      //   description: "Interactive mobile learning platform for children with engaging educational content",
+      //   tech: ["Flutter", "Dart", "Educational API"],
+      //   github_link: "https://github.com/Jamadrac/book8app",
+      //   live_link: "https://raw.githubusercontent.com/Jamadrac/book8app/refs/heads/main/build/app/outputs/flutter-apk/app-release.apk",
+      // }
     ]
   };
 
