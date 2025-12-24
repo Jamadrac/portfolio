@@ -38,7 +38,7 @@ const Hero = () => {
             {Object.entries(socialMediaLinks).map(([icon, url]) => (
               <div
                 key={icon}
-                className="text-gray-600 hover:text-white cursor-pointer"
+                className="text-gray-600 hover:text-cyan-400 cursor-pointer transition-transform duration-300 hover:scale-125"
                 onClick={() => handleSocialMediaClick(url)}
               >
                 <ion-icon name={icon}></ion-icon>

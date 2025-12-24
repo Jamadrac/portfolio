@@ -39,9 +39,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full left-0 top-0 z-50 ${
-        sticky ? "bg-slate-900/90 backdrop-blur-sm" : "bg-transparent"
-      } transition-all duration-300`}
+      className={`fixed w-full left-0 top-0 z-50 glass ${sticky ? "bg-slate-900/80" : "bg-transparent"} transition-all duration-300`}
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-4 px-4 md:px-8">

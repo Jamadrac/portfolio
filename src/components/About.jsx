@@ -46,7 +46,7 @@ const About = () => {
                 ))}
               </div>
               <div className="flex justify-center mt-8">
-                <a href="https://docs.google.com/document/d/1sofvt47lmgjJVbGY-dGoqEC3fcm_usQsmwBe6pysA0o/edit?usp=sharing">
+                <a href="https://docs.google.com/document/d/1byrY-dz6RDTYMJ95LmKC8BlFfOOQLO8IYqVL37QvpHw/edit?usp=sharing">
                   <button className="btn-primary">Download CV</button>
                 </a>
               </div>

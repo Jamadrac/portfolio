@@ -39,12 +39,12 @@ const ProjectSection = ({ title, projects = [] }) => {
         >
           {projects.map((project, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-slate-800 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25">
+              <div className="bg-slate-800 rounded-xl overflow-hidden card-hover">
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={project.img} 
                     alt={project.name} 
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110 rounded-t-xl"
                   />
                   <div className="absolute top-2 right-2 w-8 h-8 flex items-center justify-center bg-cyan-600 rounded-full text-white font-semibold">
                     {i + 1}
