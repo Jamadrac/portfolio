@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { slideInLeft } from "../animations/gsapAnimations";
+import { gsap } from "gsap";
 
 const Navbar = () => {
+  const sectionRef = useRef(null);
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -37,8 +40,26 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    gsap.set(section, { opacity: 0, x: -100 });
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          slideInLeft(section, 1.2);
+        } else {
+          gsap.to(section, { opacity: 0, x: -100, duration: 0.5 });
+        }
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
   return (
     <nav
+      ref={sectionRef}
       className={`fixed w-full left-0 top-0 z-50 glass ${sticky ? "bg-slate-900/80" : "bg-transparent"} transition-all duration-300`}
     >
       <div className="container mx-auto">

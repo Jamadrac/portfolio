@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { slideInLeft } from "../animations/gsapAnimations";
+import { gsap } from "gsap";
 
 const Contact = () => {
+  const sectionRef = useRef(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,8 +26,25 @@ const Contact = () => {
     setFormData({ name: '', email: '', message: '' });
   };
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    gsap.set(section, { opacity: 0, x: -100 });
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          slideInLeft(section, 1.2);
+        } else {
+          gsap.to(section, { opacity: 0, x: -100, duration: 0.5 });
+        }
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
   return (
-    <div className="py-10 text-white" id="contact">
+    <div ref={sectionRef} className="py-10 text-white" id="contact">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">

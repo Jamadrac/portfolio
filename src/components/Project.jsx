@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { slideInLeft } from "../animations/gsapAnimations";
+import { gsap } from "gsap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import musicapp from "../assets/images/musicapp.jpg";
 import project2 from "../assets/images/zam-bus.png";
@@ -92,6 +94,7 @@ const ProjectSection = ({ title, projects = [] }) => {
 };
 
 const Project = () => {
+  const sectionRef = useRef(null);
   const projects = {
     webApps: [
       // {
@@ -156,8 +159,25 @@ const Project = () => {
     ]
   };
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    gsap.set(section, { opacity: 0, x: -100 });
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          slideInLeft(section, 1.2);
+        } else {
+          gsap.to(section, { opacity: 0, x: -100, duration: 0.5 });
+        }
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
   return (                                    
-    <div className="py-10 text-white">
+    <div ref={sectionRef} className="py-10 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">

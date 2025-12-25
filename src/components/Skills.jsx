@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { slideInLeft } from "../animations/gsapAnimations";
+import { gsap } from "gsap";
 
 const Skills = () => {
+  const sectionRef = useRef(null);
   const skills = [
     {
       logo: "logo-react",
@@ -24,8 +27,25 @@ const Skills = () => {
       count: 86,
     }
   ];
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    gsap.set(section, { opacity: 0, x: -100 });
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          slideInLeft(section, 1.2);
+        } else {
+          gsap.to(section, { opacity: 0, x: -100, duration: 0.5 });
+        }
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
   return (
-    <section id="skills" className="py-10 bg-gray-800 relative">
+    <section ref={sectionRef} id="skills" className="py-10 bg-gray-800 relative">
       <div className="mt-8 text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           My <span className="text-cyan-600">Skills</span>

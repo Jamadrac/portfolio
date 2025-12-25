@@ -1,17 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import aboutimg from "../assets/images/iot.png";
 import cv from "../assets/CV.pdf";
+import { slideInLeft } from "../animations/gsapAnimations";
+import { gsap } from "gsap";
 
 const About = () => {
+  const sectionRef = useRef(null);
   const info = [
     { text: "years in experience", count: "04" },
     { text: "completed projects in-production", count: "04" },
     { text: "companies worked with", count: "02" },
   ];
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+    gsap.set(section, { opacity: 0, x: -100 });
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          slideInLeft(section, 1.2);
+        } else {
+          gsap.to(section, { opacity: 0, x: -100, duration: 0.5 });
+        }
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="about" className="py-10 text-white">
+    <section ref={sectionRef} id="about" className="py-10 text-white">
       <div className="container mx-auto px-4 flex flex-col items-center">
         <div className="text-center mb-8 w-full">
           <h3 className="text-4xl font-semibold">
